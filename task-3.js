@@ -25,10 +25,49 @@ let sign = "/"
 Делить на 0 нельзя!
 */
 
-const a = Number(Prompt('Число А'))
-const b = Number(Prompt('Число B'))
-const sign = prompt('Операция (*/+-)')
+// const a = Number(Prompt('Число А'))
+// const b = Number(Prompt('Число B'))
+// const sign = prompt('Операция (*/+-)')
+
+// let result
+
+// console.log(result)
+
+const a = Number(prompt('Число A'))
+const b = Number(prompt('Число B'))
+const sign = prompt('Операции ( * / + - )')
+if (isNaN(a))
+{
+    throw new Error('Значение а введено некорректно')
+}
+if (isNaN(b))
+{
+    throw new Error('Значение b введено некорректно')
+} 
+if(sign !== "+" && sign !=="-" && sign !=="*" && sign !== "/")
+{
+    throw new Error('Операция введена некорректно')
+}
 
 let result
 
+switch(sign)
+{case "+":
+    result = a+b
+    break;
+case "-":
+    result = a-b
+    break;
+case "*":
+    result = a*b
+    break;
+case "/":
+    if(b === 0) {
+      result = "Нельзя делить на 0"
+    }
+    else{
+    result = a/b;
+    }
+    break;
+}
 console.log(result)
