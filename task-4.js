@@ -11,11 +11,11 @@ let word = 'меню'
 const word = prompt('Ваше слово')
 const wordLenght = word.length
 
-sqrtword = Math.sqrt(wordLenght)
+sqrtword = Math.floor(Math.sqrt(wordLenght))
 
 let result
 
-if(sqrtword*sqrtword === wordLenght)
+if(sqrtword === Math.sqrt(wordLenght))
 {
     result = 1
 } else {

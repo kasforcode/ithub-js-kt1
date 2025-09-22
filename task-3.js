@@ -63,7 +63,7 @@ case "*":
     break;
 case "/":
     if(b === 0) {
-      result = "Нельзя делить на 0"
+      throw new Error('Нельзя делить на 0')
     }
     else{
     result = a/b;
