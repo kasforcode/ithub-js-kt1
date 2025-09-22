@@ -36,16 +36,13 @@ let sign = "/"
 const a = Number(prompt('Число A'))
 const b = Number(prompt('Число B'))
 const sign = prompt('Операции ( * / + - )')
-if (isNaN(a))
-{
+if (isNaN(a)) {
     throw new Error('Значение а введено некорректно')
 }
-if (isNaN(b))
-{
+if (isNaN(b)) {
     throw new Error('Значение b введено некорректно')
 } 
-if(sign !== "+" && sign !=="-" && sign !=="*" && sign !== "/")
-{
+if(sign !== "+" && sign !=="-" && sign !=="*" && sign !== "/") {
     throw new Error('Операция введена некорректно')
 }
 

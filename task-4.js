@@ -15,8 +15,7 @@ sqrtword = Math.floor(Math.sqrt(wordLenght))
 
 let result
 
-if(sqrtword === Math.sqrt(wordLenght))
-{
+if(sqrtword === Math.sqrt(wordLenght)) {
     result = 1
 } else {
     result = 0

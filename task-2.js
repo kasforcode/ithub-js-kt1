@@ -19,19 +19,16 @@ let weather = "clear"  
 const temp = +prompt('Температура')
 const weather = prompt('Температура (clear/cloudy)')
  
-if(isNaN(temp))
-{
+if(isNaN(temp)) {
     throw new Error('Доход введен некорректно')
 }
-if(weather !=="clear" && weather !== "cloudy")
-{
+if(weather !=="clear" && weather !== "cloudy") {
     throw new Error('Погода введена некорректно')
 }
 
 let activity
 
-if (temp >= 25 && weather === "clear") 
-{
+if (temp >= 25 && weather === "clear") {
     activity = "golf";
 } else if (temp >= 10 && temp <= 24 || weather === "cloudy") {
     activity = "bowling";

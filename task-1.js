@@ -26,14 +26,11 @@ if(range !== 'month' && range !== 'day' && range !== 'week') {
 }
 
 let rangeinRussian;
-if (range === "month") 
-{
-  rangeinRussian = "месяц";
-} else if (range === "day")
-{
-   rangeinRussian = "день";
-} else if (range === "week")
-{
+if (range === "month") { 
+    rangeinRussian = "месяц";
+} else if (range === "day") {
+    rangeinRussian = "день";
+} else if (range === "week") {
     rangeinRussian = "неделю";
 } 
 
